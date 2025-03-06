@@ -3,7 +3,7 @@ module add_1
     output reg cout, sum    // output ports
     );
 	
-always@(cin, a, b)
+always@(cin, a, b)	// procedural assignment
 	if(a & b | cin & a | cin & b) 
 	cout = 1'b1;
 	else 
