@@ -1,2 +1,2 @@
-# Gate-level-implementation-of-a-I-bit-adder
-Adder implementation in SystemVerilog
+# Gate-level combinational circuit 
+Gate-level implementation of a I-bit adder
