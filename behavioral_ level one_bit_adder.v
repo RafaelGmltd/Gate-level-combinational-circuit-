@@ -1,7 +1,7 @@
 module add_1
 	(input cin, a, b,       // input ports
-    output reg cout, sum    // output ports
-    );
+        output reg cout, sum    // output ports
+         );
 	
 always@(cin, a, b)
 	if(a & b | cin & a | cin & b) 
