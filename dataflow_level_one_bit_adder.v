@@ -1,7 +1,7 @@
 module add_1
 	(input cin, a, b,    // input ports
-    output cout, sum    // output ports
-    );
+    	output cout, sum    // output ports
+    	);
     
 wire x_o_1, x_o_2, x_o_3;
 
