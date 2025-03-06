@@ -1,2 +1,3 @@
 # Gate-level combinational circuit 
-Gate-level implementation of a I-bit adder
+Gate-level implementation of one bit adder
+Dataflow level one bit adder
