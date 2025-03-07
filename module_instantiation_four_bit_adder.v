@@ -9,8 +9,8 @@ The code for one module is not written inside another module's body (Code for di
 
 module add_1
 	(input cin, a, b,       
-    output reg sum, cout    
-    );
+	 output reg sum, cout    
+	);
 	
 always@(cin, a, b)begin	
 	if(a & b | cin & a | cin & b) 
@@ -29,7 +29,7 @@ module add_4
 wire [2:0] CARRY;
 
 /*
-Connecting signals to a module's ports by name allows wires to remain correctly 
+Connecting signals to a module's ports by NAME allows wires to remain correctly 
 connected even if the port list changes
 */
 
@@ -39,7 +39,7 @@ add_1 sum_2(.cin(CARRY[1]), .a(A[2]), .b(B[2]), .sum(SUM[2]), . cout(CARRY[2]));
 add_1 sum_3(.cin(CARRY[2]), .a(A[3]), .b(B[3]), .sum(SUM[3]), . cout(COUT));
 
 /*
-The syntax to connect wires to ports by position
+The syntax to connect wires to ports by POSITION
 ports are connected left to right according to the module's declaration
 */
 
