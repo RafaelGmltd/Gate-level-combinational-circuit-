@@ -8,3 +8,5 @@ Behavioral level  one bit adder
 Module instantiation four bit adder
 
 Parameterized adder
+
+Test bench parameterized adder
