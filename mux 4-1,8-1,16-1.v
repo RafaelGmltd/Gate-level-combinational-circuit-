@@ -66,16 +66,16 @@ module mux8to1
     input wire [2:0] SEL,
     output Y);
 
-    wire inter_0, inter_1;
+    wire [1:0] inter;
  
     // First 4-to-1 multiplexer
-    mux4to1 mux_4_1_0 (.A(A), .B(B), .C(C), .D(D), .SEL(SEL[1:0]), .Y(inter_0));
+    mux4to1 mux_4_1_0 (.A(A), .B(B), .C(C), .D(D), .SEL(SEL[1:0]), .Y(inter[0]));
     
     // Second 4-to-1 multiplexer
-    mux4to1 mux_4_1_1 (.A(E), .B(F), .C(G), .D(H), .SEL(SEL[1:0]), .Y(inter_1));
+    mux4to1 mux_4_1_1 (.A(E), .B(F), .C(G), .D(H), .SEL(SEL[1:0]), .Y(inter[1]));
 
     // Final 2-to-1 multiplexer to select between the outputs of the two 4-to-1 multiplexers
-    mux2to1 mux_2_1 (.a(inter_0), .b(inter_1), .sel(SEL[2]), .y(Y)); 
+    mux2to1 mux_2_1 (.a(inter[0]), .b(inter[0]), .sel(SEL[2]), .y(Y)); 
 
 endmodule
 
