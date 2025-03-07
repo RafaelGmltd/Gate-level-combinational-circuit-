@@ -1,7 +1,7 @@
 //Structural Description
 //A simple combinational logic implementation using a ternary operator
 
-module two_one (
+module mux2_1 (
     input wire a, b, sel,  // I/O 
     output wire y          
 );
