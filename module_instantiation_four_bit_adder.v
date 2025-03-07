@@ -12,13 +12,12 @@ module add_1
     output reg sum, cout    
     );
 	
-always@(cin, a, b)	
+always@(cin, a, b)begin	
 	if(a & b | cin & a | cin & b) 
 	cout = 1'b1;
-	else 
-	cout = 0'b0;
+	else cout = 0'b0;
 	sum = a ^ b ^cin;
-	
+end
 endmodule
 
 module add_4
